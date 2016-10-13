@@ -29,7 +29,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{microtype} 
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \renewcommand\colorchapnum{\color{ared}}
 \renewcommand\colorchaptitle{\color{ared}}
     \definecolor{ared}{rgb}{.647,.129,.149}
@@ -38,6 +38,7 @@
     \definecolor{mygreen}{rgb}{0,0.6,0}
     \definecolor{mygray}{gray}{0.95}
     \definecolor{mymauve}{rgb}{0.58,0,0.82}
+\usepackage{colortbl}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Useful links and references
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,7 +103,8 @@
                                      % \lstinputlisting; also try caption instead of title
 }
 
-\newcommand{\inlc}[1]{\colorbox{mygray}{\lstinline{#1}} } 
+\newcommand{\incl}[1]{\colorbox{mygray}{\lstinline{#1}} } 
+\newcommand{\code}[1]{\colorbox{mygray}{{\texttt{#1}}}}
 
 \usepackage[style=apa,backend=biber]{biblatex} % APA citations
 %% I used to use this:
@@ -123,6 +125,7 @@
 %    \addunit{\mol}{mol}
 \usepackage{abstract}
 \usepackage{ifthen}
+%\usepackage{picins}
 \usepackage{url}
 \usepackage{fancybox}
 \usepackage{array}
@@ -228,7 +231,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Titlepages 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frontmatter
+%\frontmatter
 \input{./child_cover.tex}
 \input{./child_titlepages.tex}
 \newpage
@@ -243,16 +246,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Put child docuemtes here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\input{./generate_tables.tex}
-%\input{./nested_input.tex}
-%\input{./content.tex}
-%\input{./child_watermark.tex}
-%\input{./child_examples.tex}
-%\input{./child_tables.tex}
-\input{./child_pictures.tex}
-%\input{./child_appendix.tex}
-
+\blindtext
 \blindmathtrue
-\blinddocument
-
+\input{./child_examples.tex}
+\blindtext
+\input{./child_exampletables.tex}
+\blindtext
 \end{document}

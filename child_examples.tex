@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Microtypographc Rulez 
+%%%%%%%%%%%%%%%%%%%%%%%l%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Kursive Schrift wird generell für Variablen benutzt, aber niemals für Zahlen oder Symbole.
+\item \verb+---+ ist ein Gedankenstrich ---
+\item \code{$-2$} Minuszeichen werden in Matheumgebung gesetzt
+\item \verb+--+ ist ein 'von ... bis' Zeichen
+\item \verb+\ldots+ sind \ldots
+\item \verb+\,+ ist ein kleiner Abstand in z.\,B.
+\item \verb+~+ ist ein geschütztes Lehrzeichen: 
+\item \verb+.\+ ist ein Punkt in einer Abkürzung
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Sammlung nützlicher Befehle  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Listings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Example for nested lists:
+\begin{itemize}
+    \item Patent Literature
+    \item Scientific Literature
+    \item Competitor Information
+        \begin{itemize} 
+        \item Patent Strategy
+        \item New Product Launches
+        \end{itemize}
+    \item Customer Information
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Randnotizen 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\note}[1]{\marginpar[]{\emph{\large{#1}}}}
+\note{Randnotiz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bild am Anfang des Absatzes vom Text umflossen 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\parpic[r]{\includegraphics[width=0.3\textwidth]{dragonlogo}} 
+%\blindtext
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bild in normaler Umgebung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{dragonlogo.pdf}
+\end{center}
+\caption{\label{}}    
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Einheiten mit Packet SIUnits 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    \item \unit{170}{\cubic\metre}
+    \item power{10}{6} 
+    \item \unit{Zellen}{\milli\reciprocal\litre} 
+    \item \unit{1000}{$\cdot g$} 
+    \item \unit{$-20$}{\celsius}
+    \item \unit{100}{\micro\gram\milli\reciprocal\litre}
+    \item \unit{109,42}{\degree}
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Spezielle Befehle für Sonderzeichen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    \item $\times$
+    \item $\mbox{M\textsubscript{r}}=400000$
+    \item \emph{aqua polymount}\textregistered
+    \item Whatman\texttrademark{}
+    \item \textsc{Dynabeads}\textsuperscript{\textregistered{}}
+    \item $\sim$\unit{1}{\milli\gram\per\milli\litre}
+    \item \textsc{Schrödinger}-Gleichung
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Beispiele für verschiedene Mathe-Umgebungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray*}
+E & = & mc^2	\\
+E & = &	1/2mv^2
+\end{eqnarray*}
+
+\begin{equation}
+E=mc^2
+\end{equation}
+
+\begin{displaymath}
+U_{total}=\sum_{3N+1}~(E_{b}+E_{\theta}+E_{\phi}
+\end{displaymath}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufzählungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+\item Startbedingungen festlegen.
+\item Kräfte berechnen.
+\end{enumerate}
+
+\begin{itemize}
+\item Entwicklung von Mutanten
+\item Vorhersage antigener Epitope
+\end{itemize}
+

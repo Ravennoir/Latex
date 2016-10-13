@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Tabellen  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom column definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Gray}{gray}{0.9}
+\newcolumntype{t}{>{\columncolor{Gray}[\tabcolsep]}l}
+\newcolumntype{v}[1]{%
+>{\begin{turn}{90}
+\begin{minipage}{#1}
+\raggedright\hspace{-3pt}}l%
+<{\end{minipage}
+\end{turn}}}
+
+\newcolumntype{g}{>{\columncolor{Gray}[\tabcolsep]}c}
+\newcolumntype{b}{>{\columncolor{CornflowerBlue}[\tabcolsep]}c}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mehrere Tabellen in einer Umgebung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}[c]{ll}
+\end{longtable}
+\begin{table}
+\begin{center}
+\begin{tabularx}{.8\textwidth}{cllXX}
+\toprule 
+    This & is & a & long & table \\
+\midrule
+    This & is & a & long & table \\
+    This & is & a & long & table \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\caption{\label{}}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gedrehte Tabelle mit variabler, angepasster Spaltenbreite siehe Tabularx-Packet
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sidewaystable}
+\centering
+\begin{tabularx}{\textwidth}{
+    >{\hsize=.8\hsize}Xp{50mm}>{\hsize=.8\hsize}X>{\hsize=1.2\hsize}XX>{\hsize=1.2\hsize}X}
+\toprule  
+    This & is & a & very & nice &table  \\
+\midrule
+    This & is & a & very & nice &table  \\
+    This & is & a & very & nice &table  \\
+\bottomrule
+\end{tabularx} 
+\caption{\label{}}
+\end{sidewaystable}
+
+
+
+
+
